@@ -19,6 +19,10 @@ pub mod count_number {
         instructions::create_number::create(ctx)
     }
 
+    pub fn increase(ctx: Context<IncreaseNumber>, delta: u64) -> Result<()> {
+        instructions::increase_number::increase(ctx, delta)
+    }
+
 
 }
 
